@@ -1,8 +1,30 @@
 <%- include('./partials/header.ejs') %>
 <body>
-<section id="principal" class="font-montserrat_ss">
 <%- include('./partials/nav/navigation.ejs') %>
-    <h2>Add Games page works!</h2>
+<section id="principal" class="contaniner h-100 d-flex justify-content-center align-items-center flex-column">
+    <h2 class="text-center">Add a new Game!</h2>
+    <div class="w-50 p-3 bg-secondary">
+        <form class="w-100">
+            <div class="form-group">
+              <label class="text-white" for="exampleInputTitle1">Game Title</label>
+              <input type="text" class="form-control" id="exampleInputTitle" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+                <label class="text-white" for="exampleInputAuthor1">Author</label>
+                <input type="text" class="form-control" id="exampleInputAuthor" placeholder="Enter the author">
+              </div>
+            <div class="form-group">
+                <label class="text-white" for="exampleInputImage1">Image</label>
+                <input type="text" class="form-control" id="exampleInputImage" aria-describedby="imageHelp" placeholder="Enter image URL">
+                <small id="imageHelp" class="form-text text-muted">Make sure the image link works..</small>
+            </div>
+            <div class="form-group">
+                <label class="text-white" for="exampleFormControlTextarea1">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-3">Submit</button>
+          </form>
+    </div>
 </section>
 </body>
 <%- include('./partials/footer.ejs') %>
