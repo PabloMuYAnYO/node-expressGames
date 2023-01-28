@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS games;
+CREATE DATABASE games CHARSET utf8mb4;
+USE games;
+
+CREATE TABLE juegos(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    url VARCHAR(255) NOT NULL,
+    distribuidor VARCHAR(255) NOT NULL,
+    descripcion VARCHAR(255) NOT NULL
+);
