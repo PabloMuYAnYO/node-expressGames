@@ -2,39 +2,18 @@
 <body>
   <%- include('./partials/nav/navigation.ejs') %>
 <section id="principal" class="contaniner h-100 d-flex justify-content-center align-items-center flex-wrap">
-  
-  <div id="game1" class="image mx-3" style="width: 18rem;">
-    <div class="image-body">
-      <h5 class="image-title">Halo: The Master Chief Collection</h5>
+  <% juegos.forEach(function(juego) { %>
+    <div class="image mx-3" style="width: 18rem;">
+      <div class="image-body">
+        <h5 class="image-title"><%= juego.titulo %></h5>
+      </div>
+      <img src="<%= juego.url %>" class="image-img-top w-100" style="height: 400px;" alt="...">
+      <div class="image-body">
+        <b><%= juego.distribuidor %></b>
+        <p class="image-text"><%= juego.descripcion %></p>
+      </div>
     </div>
-    <img src="https://acortar.link/BrQy2L" class="image-img-top w-100" style="height: 400px;" alt="...">
-    <div class="image-body">
-      <b>Xbox Game Studios</b>
-      <p class="image-text">Halo: The Master Chief Collection is a remastering of the first-person shooter video game from the Halo saga for the Xbox consoles and Windows, which was released in the United States on November 11, 2014 and in Europe on the same year.</p>
-    </div>
-  </div>
-
-  <div id="game1" class="image mx-2" style="width: 18rem;">
-    <div class="image-body">
-      <h5 class="image-title">Hollow Knight</h5>
-    </div>
-    <img src="https://acortar.link/dEDY2n" class="image-img-top w-100" style="height: 400px;" alt="...">
-    <div class="image-body">
-      <b>Team Cherry, Popeach</b>
-      <p class="image-text">Hollow Knight is a classically styled 2D action adventure across a vast interconnected world. Explore twisting caverns, ancient cities and deadly wastes; battle tainted creatures and befriend bizarre bugs; and solve ancient mysteries at the kingdom's heart. Includes free content packs!</p>
-    </div>
-  </div>
-
-  <div id="game1" class="image mx-2" style="width: 18rem;">
-    <div class="image-body">
-      <h5 class="image-title">Terraria</h5>
-    </div>
-    <img src="https://acortar.link/DexghE" class="image-img-top w-100" style="height: 400px;" alt="...">
-    <div class="image-body">
-      <b>Re-Logic, 505 Mobile S.r.l, 505 Games,...</b>
-      <p class="image-text">Terraria is an action-adventure and sandbox video game produced independently by Re-Logic studio. It has features such as exploration, crafting, building structures, and combat. It was released on May 16, 2011.</p>
-    </div>
-  </div>
+ <% }); %> 
 
 </section>
 </body>
