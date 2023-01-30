@@ -3,15 +3,16 @@
   <%- include('./partials/nav/navigation.ejs') %>
 <section id="principal" class="contaniner h-100 d-flex justify-content-center align-items-center flex-wrap">
   <% juegos.forEach(function(juego) { %>
-    <div class="image mx-3" style="width: 18rem;">
+    <div class="image mx-3 border bg-secondary text-light" style="width: 18rem;">
       <div class="image-body">
-        <h5 class="image-title"><%= juego.titulo %></h5>
+        <h5 class="image-title text-center"><%= juego.titulo %></h5>
       </div>
       <img src="<%= juego.url %>" class="image-img-top w-100" style="height: 400px;" alt="...">
-      <div class="image-body">
+      <div class="image-body text-center">
         <b><%= juego.distribuidor %></b>
         <p class="image-text"><%= juego.descripcion %></p>
       </div>
+      <button type="submit" class="btn btn-primary px-3">Remove</button>
     </div>
  <% }); %> 
 
