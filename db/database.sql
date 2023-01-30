@@ -7,5 +7,5 @@ CREATE TABLE juegos(
     titulo VARCHAR(255) NOT NULL,
     url VARCHAR(255) NOT NULL,
     distribuidor VARCHAR(255) NOT NULL,
-    descripcion VARCHAR(255) NOT NULL
+    descripcion VARCHAR(2048) NOT NULL
 );
