@@ -1,11 +1,11 @@
-const mysql = require('mysql2')
-const { HOST, USUARIO, PASSWORD, DATABASE} = require('./config')
+const mysql2 = require('mysql2');
+const { HOST, USUARIO, PASSWORD, DATABASE} = require('./config');
 
 module.exports = () => {
-    return mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'games'
+    return mysql2.createConnection({
+        host: 'HOST',
+        user: 'USUARIO',
+        password: 'PASSWORD',
+        database: 'DATABASE'
     })
 }
