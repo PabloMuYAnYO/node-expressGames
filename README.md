@@ -7,6 +7,7 @@
    * JSON.parse() ➡️ de STRING a OBJETO
    * JSON.stringfy() ➡️ de OBJETO a STRING
    * Utilizar más adelante modulo 'nodemailer'
+   * Implementar en los botones la función eliminar, ha poder ser con express-sweetalert
 
 
 
