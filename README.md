@@ -6,7 +6,6 @@
   Cada uno deberá de encontrase en una sección o artículo, el titulo arriba la imagen debajo, por último su descripción y además se agregará debajo un botón para eliminar (filter game( )=> id !=  en [{game},{game},{game}] -> [eliminados] ... DELETE FROM - WHERE ID = id), luego la imagen se agregará mediante una URL. Habrán ya 3 juegos agregados automáticamente y para añadir más se utilizará un navegador que te lleve a una interfaz tipo formulario con los campos ya mencionados. En caso de faltar algún campo + mensaje en el html ESTADO (400).
    * JSON.parse() ➡️ de STRING a OBJETO
    * JSON.stringfy() ➡️ de OBJETO a STRING
-   * Utilizar más adelante modulo 'nodemailer'
    * Implementar en los botones la función eliminar, ha poder ser con express-sweetalert
 
 
